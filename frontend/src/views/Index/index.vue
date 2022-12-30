@@ -6,7 +6,7 @@
       <input id="name" v-model="data.name" autocomplete="off" class="input" type="text"/>
       <button class="btn" style="width: 100px" @click="indexGreet">index Greet</button>
     </div>
-    <div id="iframe-view"></div>
+    <div id="iframe-view" style="margin-top: 60px"></div>
   </div>
 
 </template>
@@ -79,7 +79,7 @@ onMounted(() => {
     iframeContentDocument.head.appendChild(style)
     const divNode = document.createElement('div')
     divNode.innerHTML = `
-    <div id="app2">
+    <div id="app2" style="text-align: left">
         <div>iframe page</div>
         <div id="result" class="result">{{ data.resultText }}</div>
           <div id="input" class="input-box">
