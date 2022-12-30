@@ -1,0 +1,12 @@
+{
+  "name": "wails-v2.2.0-vue-project-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.go",
+  "scripts": {
+    "build-windows-app": "wails build -debug -platform windows/amd64 -tags \"desktop,production\" -ldflags \"-w -s -H windowsgui\" -webview2 embed",
+    "quick-build-windows-app": "cd frontend && npm run build && cd .. && npm run build-windows-app"
+  },
+  "author": "",
+  "license": "ISC"
+}
